@@ -30,5 +30,19 @@ Contributors: Sabah Ul-Hasan ([@sabahzero](https://github.com/sabahzero)), Aksha
 We will primarily be working with RNA-Seq Data </br>
 Follow along by clicking on the file labeled "Nobile-HerndayLabs_BioinformaticsWorkshop_Feb19-2019.ipynb" or [link here](https://github.com/sabahzero/Nobile-HerndayLabs_BioinformaticsWorkshop_Feb19-2019/blob/master/Nobile-HerndayLabs_BioinformaticsWorkshop_Feb19-2019.ipynb)
 
-### Overview of the MERCED cluster, how to use it through command line, why and general Q&A </br>
-</br>
+### Overview of the MERCED cluster, how to use it through command line, why and general Q&A
+4. Running shell</br>
+&nbsp;&nbsp;&nbsp;a. For Linux/MacOS - open Terminal app</br>
+&nbsp;&nbsp;&nbsp;b. For Windows - install [Git for Windows](https://gitforwindows.org/)
+
+5. ACCESSING MERCED</br>
+&nbsp;&nbsp;&nbsp;a. ssh `your_username`@merced.ucmerced.edu</br>
+&nbsp;&nbsp;&nbsp;b. Enter your MERCED password, when prompted
+
+6. [UNIX basics](https://swcarpentry.github.io/shell-novice/)</br>
+
+7. Transferring files between local machine (your laptop/desktop) to MERCED</br>
+&nbsp;&nbsp;&nbsp;a. scp `source_fullpath` `destination_fullpath` (PREFERRED method)</br>
+&nbsp;&nbsp;&nbsp;b. sftp `source_fullpath` `destination_fullpath` [more information](http://hpcwiki.ucmerced.edu/knowledgebase/how-to-transfer-files-to-or-from-the-cluster/)</br> 
+
+8. [MERCED user manual](http://hpcwiki.ucmerced.edu/knowledgebase/merced-cluster-user-manual/)

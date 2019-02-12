@@ -28,6 +28,8 @@ Contributors: Sabah Ul-Hasan ([@sabahzero](https://github.com/sabahzero)), Aksha
 &nbsp;&nbsp;&nbsp;d. Co-occurrence, network graphs, and venn diagrams with significance vs variance </br>
 
 We will primarily be working with RNA-Seq Data </br>
+Follow along by clicking on the file labeled "Nobile-HerndayLabs_BioinformaticsWorkshop_Feb19-2019.ipynb" or [link here]
+(https://github.com/sabahzero/Nobile-HerndayLabs_BioinformaticsWorkshop_Feb19-2019/blob/master/Nobile-HerndayLabs_BioinformaticsWorkshop_Feb19-2019.ipynb)
 
 ### Overview of the MERCED cluster, how to use it through command line, why and general Q&A </br>
 </br>

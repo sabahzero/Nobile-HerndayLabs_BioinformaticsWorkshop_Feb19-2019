@@ -69,40 +69,36 @@ Why do all this? </br>
 - You don't need to know any code to create the figures we're about to make in the notebook, and it's *much* faster than using Excel. </br>
 - You can easily adjust the code in your notebook for colors, axes, etc and see it quickly without having to use RStudio or run the entire code in R </br>
 - You can easily share your workflow with anyone else who uses Jupyter notebook, just as I've done here. This improves reproducibility, and can dramatically reduce many hours spent on trouble-shooting (especially in a big group, such as the Nobile and Hernday labs!) </br>
-- The [MERCED cluster](http://hpcwiki.ucmerced.edu/knowledgebase/merced-cluster-user-manual/) will soon be integrating [Jupyter Hub](https://www.google.com/search?client=firefox-b-1-d&q=jupyter+hub). It's not yet available, which is why we're using our personal computers today, but when it is you will be able to use a notebook simply by browser log-in (much like Box or DropBox) from *any* computer anywhere! </br> </br>
+- The [MERCED cluster](http://hpcwiki.ucmerced.edu/knowledgebase/merced-cluster-user-manual/) will soon be integrating [Jupyter Hub](https://www.google.com/search?client=firefox-b-1-d&q=jupyter+hub). It's not yet available, which is why we're using our personal computers today, but when it is you will be able to use a notebook simply by browser log-in (much like Box or DropBox) from *any* computer anywhere! Akshay will go more into using the cluster at the end of the workshop, and [Matthias Bussonnier](http://hpcwiki.ucmerced.edu/knowledgebase/hpc-walk-in-clinics/) will also be sitting in for any questions we may have</br> </br>
 More info on R, in case you're interested [here](https://www.rstudio.com/resources/cheatsheets/) for code cheatsheets and [here](https://www.r-graph-gallery.com/) for coding visuals
- 
 
-### Basics, creating bar plots with standard error, changing color schemes, etc
-2. Using Jupyter notebook to run R code for RNA-Seq data analysis, and interacting with Gihtub as an interface </br> 
-&nbsp;&nbsp;&nbsp;a. RNA-Seq analysis in R [resource](http://combine-australia.github.io/RNAseq-R/)</br> 
-&nbsp;&nbsp;&nbsp;b. CHIP-Seq analysis in R [resource](https://link.springer.com/protocol/10.1007%2F978-1-4939-7380-4_17)</br> 
-3. Using Jupyter notebook and R code to create publish-ready figures from an Excel datasheet for: </br>
-&nbsp;&nbsp;&nbsp;a. Growth curves and scatter plots </br>
-&nbsp;&nbsp;&nbsp;b. Bar charts, boxplots, and histograms with significance vs variance </br>
-&nbsp;&nbsp;&nbsp;c. Heatmaps with significance vs variance </br>
-&nbsp;&nbsp;&nbsp;d. Co-occurrence, network graphs, and venn diagrams with significance vs variance </br>
+### 9:30 - 10:30 AM Basics, creating a growth curve and heatmap, changing color schemes
+6. This will involve [our Jupyter notebook](https://github.com/sabahzero/Nobile-HerndayLabs_BioinformaticsWorkshop_Feb19-2019/blob/master/Nobile-HerndayLabs_BioinformaticsWorkshop_Feb19-2019.ipynb) for the rest of the time. Ideally, at this stage you are able to run this through your own personal computer such that you will be able to adjust and edit accordingly. If not, no worries! Click on the previous hyper-link and you can follow along that way, too. No need to be sitting around feeling bored! </br> </br> 
 
-We will primarily be working with RNA-Seq Data </br>
-Follow along by clicking on the file labeled "Nobile-HerndayLabs_BioinformaticsWorkshop_Feb19-2019.ipynb" or [link here](https://github.com/sabahzero/Nobile-HerndayLabs_BioinformaticsWorkshop_Feb19-2019/blob/master/Nobile-HerndayLabs_BioinformaticsWorkshop_Feb19-2019.ipynb)
+We will focus on growth curve graphs from culture data and heatmaps from RNA-Seq data, but feel free to play with the sections on histograms, bar charts, boxplots, and/or venn-diagrams if you already know how to do these! </br>  </br> 
 
-### Overview of the MERCED cluster, how to use it through command line, why and general Q&A
-4. Running shell</br>
+Checkpoint F </br> </br> 
+
+RNA-Seq analysis in R [resource](http://combine-australia.github.io/RNAseq-R/)</br> 
+CHIP-Seq analysis in R [resource](https://link.springer.com/protocol </br> 
+
+
+### 10:30 - 11:00 AM Integration and connection to the MERCED cluster [manual](http://hpcwiki.ucmerced.edu/knowledgebase/merced-cluster-user-manual/), general Q&A
+7. Running shell</br>
 &nbsp;&nbsp;&nbsp;a. For Linux/MacOS - open Terminal app</br>
 &nbsp;&nbsp;&nbsp;b. For Windows - install [Git for Windows](https://gitforwindows.org/)
 
-5. ACCESSING MERCED</br>
+8. ACCESSING MERCED</br>
 &nbsp;&nbsp;&nbsp;a. ssh `your_username`@merced.ucmerced.edu</br>
 &nbsp;&nbsp;&nbsp;b. Enter your MERCED password, when prompted
 
-6. [UNIX basics](https://swcarpentry.github.io/shell-novice/)</br>
+9. [UNIX basics](https://swcarpentry.github.io/shell-novice/)</br>
 
-7. Transferring files between local machine (your laptop/desktop) to MERCED</br>
+10. Transferring files between local machine (your laptop/desktop) to MERCED</br>
 &nbsp;&nbsp;&nbsp;a. scp `source_fullpath` `destination_fullpath` (PREFERRED method)</br>
-&nbsp;&nbsp;&nbsp;b. sftp `source_fullpath` `destination_fullpath` [more information](http://hpcwiki.ucmerced.edu/knowledgebase/how-to-transfer-files-to-or-from-the-cluster/)</br> 
+&nbsp;&nbsp;&nbsp;b. sftp `source_fullpath` `destination_fullpath` [more information](http://hpcwiki.ucmerced.edu/knowledgebase/how-to-transfer-files-to-or-from-the-cluster/)</br> </br>
 
-8. [MERCED user manual](http://hpcwiki.ucmerced.edu/knowledgebase/merced-cluster-user-manual/)
+Checkpoint G </br></br>
 
-### Miscellaneous resources
-- Getting started with Open Reproducible Science [(OCR)](https://www.earthdatascience.org/courses/earth-analytics-bootcamp/get-started-with-open-science/jupyter-notebook-interface/)
-- [Introduction to Shell](https://hbctraining.github.io/Intro-to-Shell/schedule/)
+Getting started with Open Reproducible Science [(OCR)](https://www.earthdatascience.org/courses/earth-analytics-bootcamp/get-started-with-open-science/jupyter-notebook-interface/)</br>
+Introduction to [Shell](https://hbctraining.github.io/Intro-to-Shell/schedule/) </br>

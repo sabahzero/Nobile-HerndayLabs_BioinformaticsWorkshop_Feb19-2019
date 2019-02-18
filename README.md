@@ -46,3 +46,7 @@ Follow along by clicking on the file labeled "Nobile-HerndayLabs_BioinformaticsW
 &nbsp;&nbsp;&nbsp;b. sftp `source_fullpath` `destination_fullpath` [more information](http://hpcwiki.ucmerced.edu/knowledgebase/how-to-transfer-files-to-or-from-the-cluster/)</br> 
 
 8. [MERCED user manual](http://hpcwiki.ucmerced.edu/knowledgebase/merced-cluster-user-manual/)
+
+### Miscellaneous resources
+- Getting started with Open Reproducible Science [(OCR)](https://www.earthdatascience.org/courses/earth-analytics-bootcamp/get-started-with-open-science/jupyter-notebook-interface/)
+- [Introduction to Shell](https://hbctraining.github.io/Intro-to-Shell/schedule/)

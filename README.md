@@ -34,10 +34,39 @@ Background: What are Jupyter and Git, and why use them? What do they have to do 
   Now re-open your notebook. You should now see an option to create an R notebook: 
   ![alt text](https://raw.githubusercontent.com/sabahzero/Nobile-HerndayLabs_BioinformaticsWorkshop_Feb19-2019/master/Relevant-Articles_Figures-of-Interest-Highlighted/Jupyter-Notebook_R-console.png) 
   </br>
-  We're not going to make an R Jupyter notebook (because one has already been made for you here, yay!). But, we are going to need a folder we can easily access. Let's create one. Click on 'Desktop' in your browser and create a Folder inside titled "Feb19_Nobile-Hernday_Workshop". Now, go to your home Desktop on our personal computer. Do you see the folder there? </br> 
+  We're not going to make an R Jupyter notebook (because one has already been made for you here, yay!). We are going to download this, and all files in the tutorial repository using Git</br> </br>
   Checkpoint C </br> 
   
-  3. Install Git
+  4. Install Git </br>
+  Okay, things are about to get interesting. See the .ipynb file in this repository (scroll the the tippy-top)? That's the files containing everything we need for the notebook. We're going to download it, and everything in this tutorial repository, and move it into Desktop with just a few quick command lines. But first! We need Git to do it. </br>
+  [Installation instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) </br>
+  Open a new command line prompt, type </br>
+  `ls`</br> 
+  We want to be in our Desktop. To get there, type </br>
+  `cd Desktop/`</br> 
+  Type `ls` again, to double-check it aligns with what you see on your home screen </br>
+  Congratulations on what may be your first version control experience! </br>
+  Now type `git init` to initiate Git in your Desktop </br> 
+  Visit the repository site and click on the drop-down arrow in the "Clone or download" green button </br>
+  *note* make sure you 'Clone with HTTPS' (it's easy to back-track this way over SSH if you make a mistake in your own repo) </br>
+  ![alt text](https://raw.githubusercontent.com/sabahzero/Nobile-HerndayLabs_BioinformaticsWorkshop_Feb19-2019/master/Relevant-Articles_Figures-of-Interest-Highlighted/Download-Folder_Git.png) 
+  </br>
+  Now type (in your terminal on your computer) </br>
+ `git clone https://github.com/sabahzero/Nobile-HerndayLabs_BioinformaticsWorkshop_Feb19-2019.git` </br>
+ *note* the https link above should match the same linke from the drop-down arrow. We are copying and downloading it, using Git! </br>
+ This will take a few minutes. </br>
+ Open up your Desktop folder as you usually would on your computer. *cue drum-roll* </br>
+ Do you see a Folder labeled "Nobile-HerndayLabs_BioinformaticsWorkshop_Feb19-2019" ? This should also show up in your Jupyter notebook. </br> </br>
+  Checkpoint d </br> 
+ 
+ 5. Open your .ipynb (Jupyter notebook set-up in R language) in your Jupyter notebook browser </br>
+ 
+  
+  Let's download the But, we are going to need a folder we can easily access. Let's create one. Click on 'Desktop' in your browser and create a Folder inside titled "Feb19_Nobile-Hernday_Workshop". Now, go to your home Desktop on our personal computer. Do you see the folder there? </br> </br>
+  Let's download the .ipynb file. This file is already in Jupyter notebook format, coded in the R language. </br>
+  Click on the folder, then click on the 'Raw' button
+  
+  
   4. Use Git to download and move the .ipynb file from this tutorial repository to your personal computer
  
 1. Exposure to R, GitHub, and Jupyter as complementary tools for data analysis over using Excel </br>

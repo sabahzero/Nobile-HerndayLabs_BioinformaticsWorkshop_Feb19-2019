@@ -34,7 +34,9 @@ Background: What are Jupyter and Git, and why use them? What do they have to do 
   Now re-open your notebook. You should now see an option to create an R notebook: 
   ![alt text](https://raw.githubusercontent.com/sabahzero/Nobile-HerndayLabs_BioinformaticsWorkshop_Feb19-2019/master/Relevant-Articles_Figures-of-Interest-Highlighted/Jupyter-Notebook_R-console.png) 
   </br>
+  We're not going to make an R Jupyter notebook (because one has already been made for you here, yay!). But, we are going to need a folder we can easily access. Let's create one. Click on 'Desktop' in your browser and create a Folder inside titled "Feb19_Nobile-Hernday_Workshop". Now, go to your home Desktop on our personal computer. Do you see the folder there? </br> 
   Checkpoint C </br> 
+  
   3. Install Git
   4. Use Git to download and move the .ipynb file from this tutorial repository to your personal computer
  

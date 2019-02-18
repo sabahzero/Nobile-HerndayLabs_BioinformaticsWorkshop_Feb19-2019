@@ -2,13 +2,13 @@
 <br />
 
 ![alt text](https://raw.githubusercontent.com/sabahzero/Nobile-HerndayLabs_BioinformaticsWorkshop_Feb19-2019/master/Relevant-Articles_Figures-of-Interest-Highlighted/Nobile-Lab_UC-Merced.png) 
-This is for an introduction tutorial on bioinformatics tailored to Nobile and Hernday lab members. <br />
-Contributors: Sabah Ul-Hasan ([@sabahzero](https://github.com/sabahzero)), Akshay Paropkari ([@akshayparopkari](https://github.com/akshayparopkari)), Thaddeus Seher ([@tdseher](https://github.com/tdseher))
+This is an introduction tutorial on bioinformatics, tailored to Nobile and Hernday lab members. <br />
+Contributors: Sabah Ul-Hasan ([@sabahzero](https://github.com/sabahzero)) and Akshay Paropkari ([@akshayparopkari](https://github.com/akshayparopkari))
 
 ## Overview and aims of today
-09:00 - 09:30 AM Introduction, ensuring everyone has Jupyter installed correctly on their computer </br>
-09:30 - 10:30 AM Basics, creating bar plots with standard error, changing color schemes, etc </br>
-10:30 - 11:00 AM Overview of the MERCED cluster, how to use it through command line, why and general Q&A </br>
+09:00 - 09:30 AM Introduction, validation of Jupyter and Git installation of personal computer </br>
+09:30 - 10:30 AM Basics, creating a growth curve and heatmap, changing color schemes, etc </br>
+10:30 - 11:00 AM Integration and connection to the MERCED cluster, general Q&A </br>
 </br>
 
 ### Introduction, ensuring everyone has Jupyter installed correctly on their computer

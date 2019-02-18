@@ -31,14 +31,13 @@ Background: What are Jupyter and Git, and why use them? What do they have to do 
   Let's create a new R notebook. Oops! We only see Python. </br>
   Fear not, here's [a tutorial](https://www.datacamp.com/community/blog/jupyter-notebook-r) on how to install R as part of your notebook. You can also copy/paste the below into a new command-line prompt, which is the same as the section option in the tutorial). Be sure to close your notebook, just in case. </br>
   `conda install -c r r-essentials`</br> 
-  Now re-open your notebook. You should now see an option to create an R notebook: 
+  Re-open your notebook. You should now see an option to create an R notebook: 
   ![alt text](https://raw.githubusercontent.com/sabahzero/Nobile-HerndayLabs_BioinformaticsWorkshop_Feb19-2019/master/Relevant-Articles_Figures-of-Interest-Highlighted/Jupyter-Notebook_R-console.png) 
-  </br>
   We're not going to make an R Jupyter notebook (because one has already been made for you here, yay!). We are going to download this, and all files in the tutorial repository using Git</br> </br>
-  Checkpoint C </br> 
+  Checkpoint C </br> </br> 
   
   4. Install Git </br>
-  Okay, things are about to get interesting. See the .ipynb file in this repository (scroll the the tippy-top)? That's the files containing everything we need for the notebook. We're going to download it, and everything in this tutorial repository, and move it into Desktop with just a few quick command lines. But first! We need Git to do it. </br>
+  Okay, things are about to get interesting. See the .ipynb file in this repository (scroll the the tippy-top)? That's the file containing everything we need for the notebook. We're going to download it, and everything in this tutorial repository (which contain the reference data and figures), and move it into Desktop with just a few quick command lines. But first! We need Git to do it. </br>
   [Installation instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) </br>
   Open a new command line prompt, type </br>
   `ls`</br> 
@@ -48,31 +47,26 @@ Background: What are Jupyter and Git, and why use them? What do they have to do 
   Congratulations on what may be your first version control experience! </br>
   Now type `git init` to initiate Git in your Desktop </br> 
   Visit the repository site and click on the drop-down arrow in the "Clone or download" green button </br>
-  *note* make sure you 'Clone with HTTPS' (it's easy to back-track this way over SSH if you make a mistake in your own repo) </br>
+  *note* make sure you 'Clone with HTTPS' (easy to back-track this way over SSH if you make a mistake in your own repo) </br>
   ![alt text](https://raw.githubusercontent.com/sabahzero/Nobile-HerndayLabs_BioinformaticsWorkshop_Feb19-2019/master/Relevant-Articles_Figures-of-Interest-Highlighted/Download-Folder_Git.png) 
-  </br>
   Now type (in your terminal on your computer) </br>
  `git clone https://github.com/sabahzero/Nobile-HerndayLabs_BioinformaticsWorkshop_Feb19-2019.git` </br>
- *note* the https link above should match the same linke from the drop-down arrow. We are copying and downloading it, using Git! </br>
+ *note* the https link above should match the same linke from the drop-down arrow. </br> 
+ We are copying and downloading it, using Git! </br>
  This will take a few minutes. </br>
  Open up your Desktop folder as you usually would on your computer. *cue drum-roll* </br>
- Do you see a Folder labeled "Nobile-HerndayLabs_BioinformaticsWorkshop_Feb19-2019" ? This should also show up in your Jupyter notebook. </br> </br>
-  Checkpoint d </br> 
+ Do you see a Folder labeled "Nobile-HerndayLabs_BioinformaticsWorkshop_Feb19-2019" ? </br> 
+ This should also show up in your Jupyter notebook. </br> </br>
+  Checkpoint D </br> </br> 
  
  5. Open your .ipynb (Jupyter notebook set-up in R language) in your Jupyter notebook browser </br>
+ Is this what you see in the first section? Try it out, give it a run! </br>
+ ![alt text](https://raw.githubusercontent.com/sabahzero/Nobile-HerndayLabs_BioinformaticsWorkshop_Feb19-2019/master/Relevant-Articles_Figures-of-Interest-Highlighted/Jupyter-Notebook-R.png) 
+ Congratulations, you just ran a piece of R code!!! \(*o*)/ </br></br> 
+  Checkpoint E </br> </br> 
  
-  
-  Let's download the But, we are going to need a folder we can easily access. Let's create one. Click on 'Desktop' in your browser and create a Folder inside titled "Feb19_Nobile-Hernday_Workshop". Now, go to your home Desktop on our personal computer. Do you see the folder there? </br> </br>
-  Let's download the .ipynb file. This file is already in Jupyter notebook format, coded in the R language. </br>
-  Click on the folder, then click on the 'Raw' button
-  
-  
-  4. Use Git to download and move the .ipynb file from this tutorial repository to your personal computer
+ More on R [here](https://www.rstudio.com/resources/cheatsheets/) and [here](https://www.r-graph-gallery.com/)
  
-1. Exposure to R, GitHub, and Jupyter as complementary tools for data analysis over using Excel </br>
-&nbsp;&nbsp;&nbsp;a. What is R, and why use it as a scientist? Read introduction article [here](https://www.r-project.org/about.html) </br> 
-&nbsp;&nbsp;&nbsp;b. The power of Git and Github as an open-source interface used with R: [Nature article](http://blogs.nature.com/naturejobs/2018/06/11/git-the-reproducibility-tool-scientists-love-to-hate/) </br> 
-&nbsp;&nbsp;&nbsp;c. Using Jupyter notebook as a reproducible bioinformatics 'lab notebook': [Nature article](https://www.nature.com/articles/d41586-018-07196-1) </br>
 
 ### Basics, creating bar plots with standard error, changing color schemes, etc
 2. Using Jupyter notebook to run R code for RNA-Seq data analysis, and interacting with Gihtub as an interface </br> 

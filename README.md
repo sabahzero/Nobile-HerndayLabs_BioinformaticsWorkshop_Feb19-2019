@@ -83,18 +83,14 @@ RNA-Seq analysis in R [resource](http://combine-australia.github.io/RNAseq-R/)</
 CHIP-Seq analysis in R [resource](https://link.springer.com/protocol </br> 
 
 
-### 10:30 - 11:00 AM Integration and connection to the MERCED cluster [manual](http://hpcwiki.ucmerced.edu/knowledgebase/merced-cluster-user-manual/), general Q&A
-7. Running shell</br>
+### 10:30 - 11:00 AM Integration and connection to the MERCED cluster ([manual](http://hpcwiki.ucmerced.edu/knowledgebase/merced-cluster-user-manual/)), general Q&A
+7. To access the MERCED cluster, open your command line prompt</br>
 &nbsp;&nbsp;&nbsp;a. For Linux/MacOS - open Terminal app</br>
-&nbsp;&nbsp;&nbsp;b. For Windows - install [Git for Windows](https://gitforwindows.org/)
-
-8. ACCESSING MERCED</br>
-&nbsp;&nbsp;&nbsp;a. ssh `your_username`@merced.ucmerced.edu</br>
-&nbsp;&nbsp;&nbsp;b. Enter your MERCED password, when prompted
-
-9. [UNIX basics](https://swcarpentry.github.io/shell-novice/)</br>
-
-10. Transferring files between local machine (your laptop/desktop) to MERCED</br>
+&nbsp;&nbsp;&nbsp;b. For Windows - install [Git for Windows](https://gitforwindows.org/) </br>
+ssh `your_username`@merced.ucmerced.edu</br>
+Enter your MERCED password, when prompted </br> </br>
+[UNIX basics](https://swcarpentry.github.io/shell-novice/)</br> </br>
+Transfer files between the local machine (your laptop/desktop) to MERCED</br>
 &nbsp;&nbsp;&nbsp;a. scp `source_fullpath` `destination_fullpath` (PREFERRED method)</br>
 &nbsp;&nbsp;&nbsp;b. sftp `source_fullpath` `destination_fullpath` [more information](http://hpcwiki.ucmerced.edu/knowledgebase/how-to-transfer-files-to-or-from-the-cluster/)</br> </br>
 

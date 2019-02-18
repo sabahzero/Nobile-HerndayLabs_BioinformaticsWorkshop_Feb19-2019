@@ -11,7 +11,13 @@ Contributors: Sabah Ul-Hasan ([@sabahzero](https://github.com/sabahzero)) and Ak
 10:30 - 11:00 AM Integration and connection to the MERCED cluster, general Q&A </br>
 </br>
 
-### Introduction, ensuring everyone has Jupyter installed correctly on their computer
+### Introduction, validation of Jupyter and Git installation of personal computer
+Background: What are Jupyter and Git, and why use them? What do they have to do with <i>C. abicans</i>, for example? </br>
+  Jupyter is essentially a lab notebook for 'big data' (ie sequencing -omics). We can think of it as the 'Box' or 'Dropbox' of coding and bioinformatics. The sooner and better we are with keeping good bioinformatics notes, the sooner and better we can be with reproducible research, improving and building off of findings from any given project - much like you would do with a wetlab experiment. Read more about Jupyter and its uses from this recent [Nature article](https://www.nature.com/articles/d41586-018-07196-1) </br>
+  We all understand how to create a "New Folder" on our desktop. Command line essentially acts as the 'blueprint' or code behind how those New Folders come into existence. This is known as [version control](https://www.atlassian.com/git/tutorials/what-is-version-control). Git takes version control a step further by expanding making it easy to collaborate and share, such as with other scientists. Again, this also helps with making one's work more reproducible and accessible. Learn more about Git [here] (https://git-scm.com/video/what-is-git) </br>
+  Today we will be installing both Jupyter notebook and Git onto our personal computers to help use work with and share our data more easily. Don't worry if all this seems extremely confusing at the moment. The reasoning behind this will become clearer throughout the tutorial, but also don't hesitate to ask questions at any time. <br>
+  1. Install Jupyter
+ 
 1. Exposure to R, GitHub, and Jupyter as complementary tools for data analysis over using Excel </br>
 &nbsp;&nbsp;&nbsp;a. What is R, and why use it as a scientist? Read introduction article [here](https://www.r-project.org/about.html) </br> 
 &nbsp;&nbsp;&nbsp;b. The power of Git and Github as an open-source interface used with R: [Nature article](http://blogs.nature.com/naturejobs/2018/06/11/git-the-reproducibility-tool-scientists-love-to-hate/) </br> 

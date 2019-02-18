@@ -70,7 +70,7 @@ Why do all this? </br>
 - You can easily adjust the code in your notebook for colors, axes, etc and see it quickly without having to use RStudio or run the entire code in R </br>
 - You can easily share your workflow with anyone else who uses Jupyter notebook, just as I've done here. This improves reproducibility, and can dramatically reduce many hours spent on trouble-shooting (especially in a big group, such as the Nobile and Hernday labs!) </br>
 - The [MERCED cluster](http://hpcwiki.ucmerced.edu/knowledgebase/merced-cluster-user-manual/) will soon be integrating [Jupyter Hub](https://www.google.com/search?client=firefox-b-1-d&q=jupyter+hub). It's not yet available, which is why we're using our personal computers today, but when it is you will be able to use a notebook simply by browser log-in (much like Box or DropBox) from *any* computer anywhere! </br> </br>
-More info on R, in case you're interested [here](https://www.rstudio.com/resources/cheatsheets/) and [here](https://www.r-graph-gallery.com/)
+More info on R, in case you're interested [here](https://www.rstudio.com/resources/cheatsheets/) for code cheatsheets and [here](https://www.r-graph-gallery.com/) for coding visuals
  
 
 ### Basics, creating bar plots with standard error, changing color schemes, etc

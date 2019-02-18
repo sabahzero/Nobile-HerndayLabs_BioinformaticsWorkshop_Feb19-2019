@@ -62,10 +62,15 @@ Background: What are Jupyter and Git, and why use them? What do they have to do 
  5. Open your .ipynb (Jupyter notebook set-up in R language) in your Jupyter notebook browser </br>
  Is this what you see in the first section? Try it out, give it a run! </br>
  ![alt text](https://raw.githubusercontent.com/sabahzero/Nobile-HerndayLabs_BioinformaticsWorkshop_Feb19-2019/master/Relevant-Articles_Figures-of-Interest-Highlighted/Jupyter-Notebook-R.png) 
- Congratulations, you just ran a piece of R code!!! \(*o*)/ </br></br> 
+ Congratulations, you just ran a piece of R code!!! 😃 </br></br> 
   Checkpoint E </br> </br> 
  
- More on R [here](https://www.rstudio.com/resources/cheatsheets/) and [here](https://www.r-graph-gallery.com/)
+Why do all this? </br>
+- You don't need to know any code to create the figures we're about to make in the notebook, and it's *much* faster than using Excel. </br>
+- You can easily adjust the code in your notebook for colors, axes, etc and see it quickly without having to use RStudio or run the entire code in R </br>
+- You can easily share your workflow with anyone else who uses Jupyter notebook, just as I've done here. This improves reproducibility, and can dramatically reduce many hours spent on trouble-shooting (especially in a big group, such as the Nobile and Hernday labs!) </br>
+- The [MERCED cluster](http://hpcwiki.ucmerced.edu/knowledgebase/merced-cluster-user-manual/) will soon be integrating [Jupyter Hub](https://www.google.com/search?client=firefox-b-1-d&q=jupyter+hub). It's not yet available, which is why we're using our personal computers today, but when it is you will be able to use a notebook simply by browser log-in (much like Box or DropBox) from *any* computer anywhere! </br> </br>
+More info on R, in case you're interested [here](https://www.rstudio.com/resources/cheatsheets/) and [here](https://www.r-graph-gallery.com/)
  
 
 ### Basics, creating bar plots with standard error, changing color schemes, etc

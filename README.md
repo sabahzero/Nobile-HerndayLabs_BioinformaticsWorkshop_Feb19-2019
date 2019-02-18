@@ -17,14 +17,15 @@ Background: What are Jupyter and Git, and why use them? What do they have to do 
   Today we will be installing both Jupyter notebook and Git onto our personal computers to help use work with and share our data more easily. Don't worry if all this seems extremely confusing at the moment. The reasoning will become clearer throughout the tutorial, but also don't hesitate to ask questions at any time. There are multiple people in the room who are very happy to help and explain in whatever way suits you best! On that note, if you see something in tutorial that could easily be improved then feel free to create a [Pull Request](https://help.github.com/articles/creating-a-pull-request/) at any time and we will incorporate it -- the benefit of open-source and Git already demonstrated in real-time!<br>
   1. Confirm access to a command line prompt for your computer </br>
   If you're not sure how to use or access this, check out this [quick introduction](https://www.davidbaumgold.com/tutorials/command-line/)</br> 
-  Let's do a "fun" test by seeing if we can find our Desktop folder through command line </br> 
+  Let's do a "fun" test by seeing if we can find our Downloads folder through command line </br> 
+  Checkpoint A </br> 
+  
   2. Install Jupyter </br>
-  Jupyter requires Python and Anaconda before it can be installed successfully. This may seem like a lot of extra work now, but many bioinformatics data and progams involve Python and/or Anaconda. So, in the long-term, you'll already be prepared! </br>
+  Jupyter requires Python and Anaconda before it can be installed successfully. This may seem like extra work now, but many bioinformatics data and progams involve Python and/or Anaconda. So, in the long-term, you'll already be prepared! </br>
   Install [Python](https://www.python.org/downloads/) This is a programming language, analogous to R. We will be using R in the tutorial because it's a language more commonly used in the life science, but python is certainly the way to go if you're considering being more involved in bioinformatics and/or the tech industry in the long-term. This is because most in those "realms" use Python. The whole reason we need to install Python is because Jupyter notebook was written in Python! </br>
-  Install [Anaconda](https://www.anaconda.com/distribution/) This is a platform that will help your usage of Python or R, and associated packages, run faster and smoother. </br>
-  Install [Jupyter Notebook](https://jupyter.org/install) </br>
-  Checkpoint 1: Does a new window open up when you type in 
-  `jupyter notebook`
+  Install [Anaconda](https://www.anaconda.com/distribution/) This is a platform that will help your usage of Python or R, and associated packages, run faster and smoother. Now for the big reveal: Install [Jupyter Notebook](https://jupyter.org/install) </br>
+  Alright, are you ready for this? Does a browser pop-up after typing-in `jupyter notebook` in command line, and do you see your Downloads folder in that browser? Pretty cool, huh?! *note this does mean you have to be connected to the internet when using the notebook, but you'll see why this is can be a really great alternative to software such as RStudio shortly
+  Checkpoint B </br> 
   
   2. Ensure R is part of your Jupyter notebook (not just Python)
   3. Install Git

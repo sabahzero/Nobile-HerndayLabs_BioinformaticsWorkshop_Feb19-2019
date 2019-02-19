@@ -76,7 +76,7 @@ More info on R, in case you're interested [here](https://www.rstudio.com/resourc
 ### 9:30 - 10:30 AM Basics, creating a bar chart and heatmap, changing color schemes, etc
 6. This will involve [our Jupyter notebook](https://github.com/sabahzero/Nobile-HerndayLabs_BioinformaticsWorkshop_Feb19-2019/blob/master/Nobile-HerndayLabs_BioinformaticsWorkshop_Feb19-2019.ipynb) for the rest of the time. Ideally, at this stage you are able to run this through your own personal computer such that you will be able to adjust and edit accordingly. If not, no worries! Click on the previous hyper-link and you can follow along that way, too. No need to be sitting around feeling bored! </br> </br> 
 
-We will focus on creating a bar chart and heatmap from RNA-Seq data. If these are things you already know how to do in R and/or Jupyter notebook, then feel free to directly edit your file(s) for areas benefitting from improvement and add-in histograms, growth curves, boxplots, venn diagrams... This is essentially and 'office hours' session, so if you have specific things you'd like to work on then feel free to do so and we can help improve them as part of this master tutorial! </br>  </br> 
+We will focus on creating a bar chart and heatmap from RNA-Seq data. If these are things you already know how to do in R and/or Jupyter notebook, then feel free to directly edit your file(s) for areas benefitting from improvement and add-in histograms, growth curves, boxplots, venn diagrams... This is essentially an 'office hours' session, so if you have specific things you'd like to work on then feel free to do so and we can help improve them as part of this master tutorial! </br>  </br> 
 
 Checkpoint F </br> </br> 
 

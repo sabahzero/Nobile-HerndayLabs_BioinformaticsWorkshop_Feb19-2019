@@ -81,7 +81,7 @@ We will focus on creating a bar chart and heatmap from RNA-Seq data. If these ar
 Checkpoint F </br> </br> 
 
 RNA-Seq analysis in R [resource](http://combine-australia.github.io/RNAseq-R/)</br> 
-CHIP-Seq analysis in R [resource](https://link.springer.com/protocol </br> 
+CHIP-Seq analysis in R [resource](https://link.springer.com/protocol) </br> 
 
 
 ### 10:30 - 11:00 AM Integration and connection to the MERCED cluster ([manual](http://hpcwiki.ucmerced.edu/knowledgebase/merced-cluster-user-manual/)), general Q&A

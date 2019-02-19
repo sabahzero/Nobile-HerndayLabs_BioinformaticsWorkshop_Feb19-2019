@@ -1,0 +1,195 @@
+---
+title: "GLM example"
+author: "Thaddeus Seher"
+date: "February 19, 2019"
+output: html_document
+---
+
+Load the required packages into the workspace
+```{r}
+library(readxl) # For parsing Excel Workbooks
+library(ggplot2) # For plotting
+library(dplyr) # For data manipulation
+library(GGally) # For plotting
+```
+
+Example for how to load an excel file into R
+```{r}
+#df.raw = read_excel(file.choose()) # Uncomment this to make it execute
+```
+
+We generate some normally-distributed data that resembles yours.
+This data, on average, should show that post scores are worse than pre scores (non-directionally).
+```{r}
+number_individuals = 10
+number_trials=8
+d1 = data.frame(individual=rep(1:number_individuals, each=number_trials))
+d2 = data.frame(trial=rep(1:number_trials, times=number_individuals))
+d3 = data.frame(pre=rnorm(number_individuals*number_trials, 0, 10))
+d4 = data.frame(post=rnorm(number_individuals*number_trials, 0, 20))
+data.raw = cbind.data.frame(d1, d2, d3, d4)
+```
+
+Let's make the first figure be all paiwise regressions between variables in the data. If any of the slopes/correlations are far from zero, then these are prime candidates for variables that drive trends in the data.
+```{r}
+# Function to return points and geom_smooth
+# allow for the method to be changed
+# Retrieved from : https://stackoverflow.com/questions/35085261/how-to-use-loess-method-in-ggallyggpairs-using-wrap-function/35088740#35088740
+my_fn <- function(data, mapping, method="loess", ...){
+   p <- ggplot(data = data, mapping = mapping) + 
+       geom_point() + 
+       geom_smooth(method=method, ...)
+   p
+}
+ggpairs(data.raw, lower = list(continuous = my_fn))
+```
+
+Before we modify the data in any particular way, let's graph a line representing each datum at all its quantitative variables.
+Also, let's color each individual differently.
+```{r}
+# Re-scale each variable?
+#var_names = colnames(data.raw)
+var_names = c("individual", "trial", "pre", "post")
+
+colcat = function(x, columns) {
+  y = c()
+  for (i in columns) {
+    y = c(y, x[,i])
+  }
+  return(y)
+}
+
+data.raw$uniq = as.factor(1:nrow(data.raw))
+
+#data.new = data.frame(uniq=rep(data.raw$uniq, length(var_names)), vars=rep(1:length(var_names), each=length(data.raw$uniq)), vals=colcat(data.raw, var_names))
+
+data.new = data.frame(uniq=rep(data.raw$uniq, length(var_names)), vars=rep(var_names, each=length(data.raw$uniq)), vals=colcat(data.raw, var_names), individual=rep(data.raw$individual, length(var_names)))
+
+# Change order to reflect what we want
+data.new$vars = factor(data.new$vars, levels=var_names)
+
+# uniq var val  individual
+# 1    1   99   1
+# 2    1   98   1
+# 1    2   120  1
+# 2    2   121  1
+# 1    3   -5   1
+# 2    3   -6   1
+# 1    4   0    1
+# 2    4   1    1
+
+ggplot(data.new, aes(x=vars, y=vals, color=as.factor(individual), group=uniq)) +
+  geom_line()
+
+
+```
+
+
+To plot the data in an informative way, let's select only a subset of it and slightly change its format.
+```{r}
+data.plot1 = cbind.data.frame(individual=c(data.raw$individual, data.raw$individual), response=c(data.raw$pre, data.raw$post), type=c(rep("pre", number_individuals*number_trials), rep("post", number_individuals*number_trials)), trial=c(data.raw$trial, data.raw$trial))
+```
+
+Now we plot the reordered data.
+```{r}
+ggplot(data.plot1, aes(x=as.factor(individual), y=response, fill=as.factor(type))) +
+  geom_dotplot(binaxis="y", stackdir="center", position=position_dodge(width=0.8)) +
+```
+
+An arguably better way to display the data is by using line segments to represent the relationship between the `pre` and `post` variables for each individual. An added benefit is coloring by trial.
+```{r}
+ggplot(data.raw, aes(color=trial)) + 
+  geom_point(aes(x=-1, y=pre)) + 
+  geom_point(aes(x=1, y=post)) + 
+  geom_segment(aes(x=-1, xend=1, y=pre, yend=post)) + 
+  facet_grid(cols=vars(individual)) + 
+  xlab('individual') + 
+  ylab('pre -> post')
+```
+
+
+If we assume the data are paired, then we can calculate the difference between the error in post and the error in pre.
+```{r}
+data.plot2 = cbind.data.frame(individual=data.raw$individual, difference=abs(data.raw$post)-abs(data.raw$pre), trial=data.raw$trial)
+```
+Since the values tend to be greater than 0, we intuitively know that post are more erronous than pre.
+```{r}
+ggplot(data.plot2, aes(x=as.factor(individual), y=difference)) +
+  geom_dotplot(binaxis="y", stackdir="center") +
+  stat_summary(fun.y=mean, geom="point", shape=18, size=3, color="red")
+```
+
+If we cannot assume the data are paired, then we calculate n*m difference comparisons.
+```{r}
+x = c()
+y = c()
+for (i in 1:number_individuals) {
+  a = dplyr::filter(data.raw, individual==i)$post
+  b = dplyr::filter(data.raw, individual==i)$pre
+  
+  z = as.numeric(outer(abs(a), abs(b), '-'))
+  
+  x = c(x, rep(i, length(z)))
+  y = c(y, z)
+}
+data.plot3 = data.frame(individual=x, difference=y)
+```
+
+Then we plot them. Since the data is dense, we plot densities in addition than individual values.
+```{r}
+ggplot(data.plot3, aes(x=as.factor(individual), y=difference)) +
+  geom_dotplot(binaxis="y", stackdir="center") +
+  stat_summary(fun.y=mean, geom="point", shape=18, size=3, color="red")
+
+ggplot(data.plot3, aes(x=as.factor(individual), y=difference)) +
+  geom_violin(scale="count", trim=FALSE, adjust=0.5) +
+  stat_summary(fun.y=mean, geom="point", shape=18, size=3, color="red")
+```
+
+
+
+Let's use the paired data to generate some simple linear regressions.
+The blue line is the best-fit regression. The grey area represents the standard error of the mean for that x position.
+The red points are the means.
+```{r}
+ggplot(data.plot2, aes(x=individual, y=difference)) +
+  geom_point() +
+  stat_summary(fun.y=mean, geom="point", shape=18, size=3, color="red") +
+  geom_smooth(method="glm")
+
+ggplot(data.plot3, aes(x=individual, y=difference)) +
+  geom_point() +
+  stat_summary(fun.y=mean, geom="point", shape=18, size=3, color="red") +
+  geom_smooth(method="glm")
+```
+
+If we want, we can create a Generalized Linear Model (GLM) that measures the `difference` in response to the `individual` and `trial`, and save the model into a variable.
+Then we can use the model to predict the `difference` given the observed (or any arbitrary) `individual` and `trial`.
+```{r}
+
+lm2 = glm(formula=difference~individual*trial, data=data.plot2)
+
+# save predictions of the model in the new data frame together with variable you want to plot against
+predicted_df <- data.frame(individual=data.plot2$individual, difference_pred=predict(lm2, data.plot2))
+
+# this is the predicted line of multiple linear regression
+ggplot(data=data.plot2, aes(x=individual, y=difference)) + 
+  geom_point() +
+  #geom_line(color='blue', data=predicted_df, aes(x=individual, y=difference_pred))
+  geom_point(color='blue', size=3, shape=1, data=predicted_df, aes(x=individual, y=difference_pred)) +
+  stat_summary(fun.y=mean, geom="point", shape=18, size=3, color="red")
+
+```
+
+Since we want to know how significant this signal is, we can perform an ANOVA like this.
+```{r}
+summary(lm2)
+```
+
+Take a look at the P-value column.
+This tells us that `trial` does not contribute a significant effect to the `difference`.
+This makes sense, since the data we generated doesn't simulate this.
+
+
+
+

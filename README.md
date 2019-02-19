@@ -8,7 +8,7 @@ Contributors: Sabah Ul-Hasan ([@sabahzero](https://github.com/sabahzero)) and Ak
 ## Overview and aims of today
 09:00 - 09:30 AM Introduction, validation of Jupyter and Git installation of personal computer </br>
 09:30 - 10:30 AM Basics, creating a growth curve and heatmap, changing color schemes, etc </br>
-10:30 - 11:00 AM Integration and connection to the MERCED cluster, general Q&A </br>
+10:30 - 11:00 AM Integration and connection to the MERCED cluster, general Q&A (joined by Matthias Bussonnier) </br>
 
 ### 9 - 9:30 AM Introduction, validation of Jupyter and Git installation of personal computer
 Background: What are Jupyter and Git, and why use them? What do they have to do with <i>C. abicans</i>, for example? </br> </br>

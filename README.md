@@ -7,7 +7,7 @@ Contributors: Sabah Ul-Hasan ([@sabahzero](https://github.com/sabahzero)) and Ak
 
 ## Overview and aims of today
 09:00 - 09:30 AM Introduction, validation of Jupyter and Git installation of personal computer </br>
-09:30 - 10:30 AM Basics, creating a growth curve and heatmap, changing color schemes, etc </br>
+09:30 - 10:30 AM Basics, creating a bar chart and heatmap, changing color schemes, etc </br>
 10:30 - 11:00 AM Integration and connection to the MERCED cluster, general Q&A (joined by Matthias Bussonnier) </br>
 
 ### 9 - 9:30 AM Introduction, validation of Jupyter and Git installation of personal computer
@@ -73,10 +73,10 @@ Why do all this? </br>
 - The [MERCED cluster](http://hpcwiki.ucmerced.edu/knowledgebase/merced-cluster-user-manual/) will soon be integrating [Jupyter Hub](https://www.google.com/search?client=firefox-b-1-d&q=jupyter+hub). It's not yet available, which is why we're using our personal computers today, but when it is you will be able to use a notebook simply by browser log-in (much like Box or DropBox) from *any* computer anywhere! Akshay will go more into using the cluster at the end of the workshop, and [Matthias Bussonnier](http://hpcwiki.ucmerced.edu/knowledgebase/hpc-walk-in-clinics/) will also be sitting in for any questions we may have</br> </br>
 More info on R, in case you're interested [here](https://www.rstudio.com/resources/cheatsheets/) for code cheatsheets and [here](https://www.r-graph-gallery.com/) for coding visuals
 
-### 9:30 - 10:30 AM Basics, creating a growth curve and heatmap, changing color schemes
+### 9:30 - 10:30 AM Basics, creating a bar chart and heatmap, changing color schemes, etc
 6. This will involve [our Jupyter notebook](https://github.com/sabahzero/Nobile-HerndayLabs_BioinformaticsWorkshop_Feb19-2019/blob/master/Nobile-HerndayLabs_BioinformaticsWorkshop_Feb19-2019.ipynb) for the rest of the time. Ideally, at this stage you are able to run this through your own personal computer such that you will be able to adjust and edit accordingly. If not, no worries! Click on the previous hyper-link and you can follow along that way, too. No need to be sitting around feeling bored! </br> </br> 
 
-We will focus on growth curve graphs from culture data and heatmaps from RNA-Seq data, but feel free to play with the sections on histograms, bar charts, boxplots, and/or venn-diagrams if you already know how to do these! </br>  </br> 
+We will focus on creating a bar chart and heatmap from RNA-Seq data. If these are things you already know how to do, then feel free to directly edit your file(s) and add-in histograms, growth curves, boxplots, and/or venn diagrams. This is essentially and 'office hours' session, so if you have specific things you'd like to work on then feel free to do so and we can help improve them as part of a master tutorial! </br>  </br> 
 
 Checkpoint F </br> </br> 
 

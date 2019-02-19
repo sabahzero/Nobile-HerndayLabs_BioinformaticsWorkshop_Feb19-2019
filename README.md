@@ -56,13 +56,14 @@ Background: What are Jupyter and Git, and why use them? What do they have to do 
  This will take a few minutes. </br>
  Open up your Desktop folder as you usually would on your computer. *cue drum-roll* </br>
  Do you see a Folder labeled "Nobile-HerndayLabs_BioinformaticsWorkshop_Feb19-2019" ? </br> 
- This should also show up in your Jupyter notebook. </br> </br>
+ This should also show up in your Jupyter notebook. </br>
+ *note* "Relevant-Articles_Figures-of-Interest-Highlighted" contains articles with figures of interest from survey input </br> </br>
   Checkpoint D </br> </br> 
  
  5. Open your .ipynb (Jupyter notebook set-up in R language) in your Jupyter notebook browser </br>
  Is this what you see in the first section? Try it out, give it a run! </br>
  ![alt text](https://raw.githubusercontent.com/sabahzero/Nobile-HerndayLabs_BioinformaticsWorkshop_Feb19-2019/master/Relevant-Articles_Figures-of-Interest-Highlighted/Jupyter-Notebook-R.png) 
- Congratulations, you just ran a piece of R code!!! 😃 </br></br> 
+ Congratulations, you just 'ran' a piece of R code!!! 😃 </br></br> 
   Checkpoint E </br> </br> 
  
 Why do all this? </br>

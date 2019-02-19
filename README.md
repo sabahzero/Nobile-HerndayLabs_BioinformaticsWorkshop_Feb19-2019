@@ -98,3 +98,10 @@ Checkpoint G </br></br>
 
 Getting started with Open Reproducible Science [(OCR)](https://www.earthdatascience.org/courses/earth-analytics-bootcamp/get-started-with-open-science/jupyter-notebook-interface/)</br>
 Introduction to [Shell](https://hbctraining.github.io/Intro-to-Shell/schedule/) </br>
+
+### Contacts
+Sabah Ul-Hasan ([@sabazhero](https://github.com/sabahzero)) </br>
+Akshay Paropkari ([@akshayparopkari](https://github.com/akshayparopkari)) </br>
+Thaddeus Seher ([@tdseher](https://github.com/tdseher))</br>
+Matthias Bussonnier ([@Carreau](https://github.com/Carreau))</br>
+[Sarvani Chadalapaka](https://it.ucmerced.edu/content/sarvani-chadalapaka) 

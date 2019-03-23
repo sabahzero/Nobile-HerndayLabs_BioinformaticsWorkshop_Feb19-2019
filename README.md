@@ -3,7 +3,7 @@
 
 ![alt text](https://raw.githubusercontent.com/sabahzero/Nobile-HerndayLabs_BioinformaticsWorkshop_Feb19-2019/master/Relevant-Articles_Figures-of-Interest-Highlighted/Nobile-Lab_UC-Merced.png) 
 This is an introduction tutorial on bioinformatics, tailored to Nobile and Hernday lab members. <br />
-Contributors: Sabah Ul-Hasan ([@sabahzero](https://github.com/sabahzero)) and Akshay Paropkari ([@akshayparopkari](https://github.com/akshayparopkari))
+Contributors: Sabah Ul-Hasan ([@sabahzero](https://github.com/sabahzero)), Akshay Paropkari ([@akshayparopkari](https://github.com/akshayparopkari)), and Thaddeus Seher ([@tdseher](https://github.com/tdseher))
 
 ## Overview and aims of today
 09:00 - 09:30 AM Introduction, validation of Jupyter and Git installation of personal computer </br>
